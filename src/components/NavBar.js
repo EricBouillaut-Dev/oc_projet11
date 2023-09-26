@@ -5,11 +5,13 @@ function NavBar() {
   return (
     <div className="navbar">
       <LogoNavBar />
-      <ul>
+      <ul className="nav">
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "activeLink" : undefined)}
+            className={({ isActive }) =>
+              isActive ? "nav-link activeLink" : "nav-link"
+            }
           >
             Accueil
           </NavLink>
@@ -17,7 +19,9 @@ function NavBar() {
         <li>
           <NavLink
             to="/about"
-            className={({ isActive }) => (isActive ? "activeLink" : undefined)}
+            className={({ isActive }) =>
+              isActive ? "nav-link activeLink" : "nav-link"
+            }
           >
             A Propos
           </NavLink>
