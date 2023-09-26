@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+.activeLink {
+    border-bottom: 1px solid;
+}

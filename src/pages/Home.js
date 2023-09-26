@@ -1,8 +1,16 @@
-function Home() {
+import { Link } from "react-router-dom";
+
+function Home({ data }) {
   return (
     <div className="home">
-      <h1>KASA</h1>
-      <div>Home</div>
+      {data.map((card) => (
+        <div key={card.id} className="card">
+          <Link to={`/card/${card.id}`} key={card.id} className="cardid">
+            <img src={card.cover} alt={card.title} />
+            <h3 className="card-title">{card.title}</h3>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }
