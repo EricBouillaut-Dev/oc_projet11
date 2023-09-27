@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import LogoNavBar from "./LogoNavBar";
+import LogoNavBar from "../assets/logo_Header.svg";
 
 function NavBar() {
   return (
     <div className="navbar">
-      <LogoNavBar />
+      <img src={LogoNavBar} alt="Logo-NavBar" />
       <ul className="nav">
         <li>
           <NavLink

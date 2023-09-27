@@ -1,8 +1,11 @@
+import Banner from "../components/Banner";
+import Banner_About from "../assets/banner_About.jpg";
+
 function About() {
   return (
-    <div className="about">
-      <h1>KASA</h1>
-      <div>About</div>
+    <div>
+      <Banner imagesrc={Banner_About} text="" />
+      <div className="about">{/* {} */}</div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 @import './banner.css';
 @import './card.css';
-@import './cardid.css';
+@import './product.css';
 @import './about.css';
 @import './collapse.css';
 @import './error.css';
@@ -9,4 +9,4 @@
 @import './infocard.css';
 @import './navbar.css';
 @import './rating.css';
-@import './slide.css';
+@import './slider.css';
