@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <Banner imagesrc={Banner_About} text="" />
-      <div className="about">{/* {} */}</div>
+      <div className="about">{/* {TODO} */}</div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-import Slider from "../components/Slider"; // Importez le composant Slider
+import Slider from "../components/Slider";
 
 function Product({ data }) {
   const { productid } = useParams();
@@ -11,7 +11,6 @@ function Product({ data }) {
 
   return (
     <div className="card-id">
-      {/* Utilisez le composant Slider ici en passant les images */}
       <Slider images={card.pictures} />
       <h1>{card.title}</h1>
       <p>Rating: {card.rating}</p>
