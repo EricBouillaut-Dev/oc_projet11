@@ -1,28 +1,14 @@
-.cardid {
-    position: relative;
+.card {
     width: 340px;
     height: 340px;
     display: flex;
 }
 
-.cardid img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.card a {
+    position: relative;
 }
-  
-.card-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    padding: 10px;
-    text-align: left;
-}
-  
-.cardid::before {
+
+.card a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -32,4 +18,20 @@
     background: linear-gradient(transparent 66%, rgba(0, 0, 0, 0.6) 100%);
     border-radius: 10px;
 }
-  
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
