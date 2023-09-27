@@ -10,7 +10,7 @@ function Product({ data }) {
   }
 
   return (
-    <div className="card-id">
+    <div className="product">
       <Slider images={card.pictures} />
       <h1>{card.title}</h1>
       <p>Rating: {card.rating}</p>
