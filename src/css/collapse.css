@@ -1,0 +1,42 @@
+  .collapse {
+    max-width: 1024px;
+    margin: 30px auto;
+  }
+  
+  .collapse-button {
+    border-radius: 5px;
+    font-size: 24px;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: var(--color-Kasa);
+  }
+  
+  .fa-angle-up {
+    font-size: 40px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .collapse-content {
+    display: none;
+  }
+  
+  .open .collapse-content {
+    padding: 20px;
+    font-size: 18px;
+    color: var(--color-Kasa);
+    background-color: var(--color-Kasa-Background);
+    display: block;
+    border-radius: 5px;
+  }
+  
