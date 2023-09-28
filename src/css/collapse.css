@@ -1,42 +1,47 @@
-  .collapse {
-    max-width: 1024px;
-    margin: 30px auto;
-  }
-  
-  .collapse-button {
-    border-radius: 5px;
-    font-size: 24px;
-    width: 100%;
-    padding: 5px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    color: white;
-    background-color: var(--color-Kasa);
-  }
-  
-  .fa-angle-up {
-    font-size: 40px;
-    transition: transform 0.3s ease;
-    transform-origin: center;
-  }
-  
-  .rotate {
-    transform: rotate(180deg);
-  }
-  
-  .collapse-content {
-    display: none;
-  }
-  
-  .open .collapse-content {
-    padding: 20px;
-    font-size: 18px;
-    color: var(--color-Kasa);
-    background-color: var(--color-Kasa-Background);
-    display: block;
-    border-radius: 5px;
-  }
-  
+.collapse {
+  max-width: 1024px;
+  margin: 30px auto;
+}
+
+.collapse-button {
+  border-radius: 5px;
+  font-size: 24px;
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: var(--color-Kasa);
+}
+
+.fa-angle-up {
+  font-size: 40px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  color: var(--color-Kasa-Background);
+  background-color: var(--color-Kasa-Background);
+  transition: max-height 0.2s ease, padding 0.2s ease, color 0.2s ease;
+}
+
+.open .collapse-content {
+  padding: 20px;
+  font-size: 18px;
+  color: var(--color-Kasa);
+  background-color: var(--color-Kasa-Background);
+  max-height: 300px;
+  border-radius: 5px;
+  transition: max-height 0.3s ease, padding 0.3s ease, color 0.3s ease;
+}
