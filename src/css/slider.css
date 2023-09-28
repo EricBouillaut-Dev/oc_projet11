@@ -22,22 +22,23 @@
     z-index: 2;
   }
   
-  .slider-chevron {
+  .fa-angle-left,
+  .fa-angle-right {
     position: absolute;
     top: 50%;
-    transform: translateY(-57%);
-    font-size: 200px;
+    transform: translateY(-50%);
+    font-size: 150px;
     color: white;
     padding: 10px;
     cursor: pointer;
     z-index: 1;
   }
   
-  .slider-chevron.left {
+  .fa-angle-left {
     left: 0;
   }
   
-  .slider-chevron.right {
+  .fa-angle-right {
     right: 0;
   }
   

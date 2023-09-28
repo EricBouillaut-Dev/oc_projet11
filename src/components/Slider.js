@@ -22,12 +22,8 @@ function Slider({ images }) {
         <span className="slider-number">
           {currentIndex + 1}/{images.length}
         </span>
-        <div className="slider-chevron left" onClick={prevImage}>
-          &#8249;
-        </div>
-        <div className="slider-chevron right" onClick={nextImage}>
-          &#8250;
-        </div>
+        <div className="fa fa-angle-left" onClick={prevImage}></div>
+        <div className="fa fa-angle-right" onClick={nextImage}></div>
       </div>
     </div>
   );
