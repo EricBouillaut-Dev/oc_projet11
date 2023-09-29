@@ -1,0 +1,17 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px 0;
+}
+.tag {
+    min-width: 115px;
+    padding: 0 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: var(--color-Kasa);
+    text-align: center;
+    line-height: 25px;
+}
+

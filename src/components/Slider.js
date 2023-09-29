@@ -3,15 +3,9 @@ import React, { useState } from "react";
 function Slider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  const changeImage = (increment) => {
+    setCurrentIndex(
+      (current) => (current + increment + images.length) % images.length
     );
   };
 
@@ -22,8 +16,8 @@ function Slider({ images }) {
         <span className="slider-number">
           {currentIndex + 1}/{images.length}
         </span>
-        <div className="fa fa-angle-left" onClick={prevImage}></div>
-        <div className="fa fa-angle-right" onClick={nextImage}></div>
+        <div className="fa fa-angle-left" onClick={() => changeImage(-1)}></div>
+        <div className="fa fa-angle-right" onClick={() => changeImage(1)}></div>
       </div>
     </div>
   );
