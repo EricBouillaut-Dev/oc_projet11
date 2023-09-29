@@ -16,8 +16,8 @@ function Slider({ images }) {
         <span className="slider-number">
           {currentIndex + 1}/{images.length}
         </span>
-        <div className="fa fa-angle-left" onClick={() => changeImage(-1)}></div>
-        <div className="fa fa-angle-right" onClick={() => changeImage(1)}></div>
+        <i className="fa fa-angle-left" onClick={() => changeImage(-1)}></i>
+        <i className="fa fa-angle-right" onClick={() => changeImage(1)}></i>
       </div>
     </div>
   );

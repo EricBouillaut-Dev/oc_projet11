@@ -1,5 +1,5 @@
 .product {
-  margin: 45px 100px;
+  margin: 0 100px;
   color: var(--color-Kasa);
 }
 .product-collapse{
@@ -11,48 +11,4 @@
 }
 .product-collapse > .collapse {
   width: 50%;
-}
-
-.rating {
-  font-size: 16px;
-  display: inline-block;
-  position: relative;
-}
-
-.rating::before {
-  content: "★★★★★";
-  font-size: 36px;
-  letter-spacing: 8px;
-  color: var(--color-Kasa-Background);
-}
-
-.rating::after {
-  content: "";
-  font-size: 36px;
-  letter-spacing: 8px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* overflow: hidden; */
-  color: var(--color-Kasa);
-}
-
-.rating[data-rating="1"]::after {
-  content: "★";
-}
-
-.rating[data-rating="2"]::after {
-  content: "★★";
-}
-
-.rating[data-rating="3"]::after {
-  content: "★★★";
-}
-
-.rating[data-rating="4"]::after {
-  content: "★★★★";
-}
-
-.rating[data-rating="5"]::after {
-  content: "★★★★★";
 }

@@ -1,0 +1,15 @@
+.rating {
+    font-size: 24px;
+    display: inline-block;
+    text-align: right;
+  }
+  
+  .star {
+    margin-left: 15px;
+    color: var(--color-Kasa-EmptyStar);
+  }
+  
+  .star.active {
+    color: var(--color-Kasa);
+  }
+  

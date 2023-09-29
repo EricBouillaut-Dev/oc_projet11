@@ -1,0 +1,44 @@
+.info-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-card_left,
+.info-card_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card_left {
+    flex-basis: 80%;
+    gap: 5px;
+}
+
+.info-card_left h2 {
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.info-card p {
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+
+}
+
+.info-card_right img {
+    width: 64px;
+    height: 64px;
+    border-radius: 35px;
+}
+.info-card_host{
+    display: flex;
+    margin: 25px 0;
+    justify-content: right;
+}
+.info-card_hostname {
+    display: flex;
+    margin-right: 10px;
+    text-align: right;
+    align-items: center;
+    width: 50%;
+}
