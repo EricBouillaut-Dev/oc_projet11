@@ -6,7 +6,7 @@
   display: flex;
   gap: 75px;
 }
-.product ul {
+.product li {
   list-style: none;
 }
 .product-collapse > .collapse {

@@ -29,7 +29,7 @@ function Product({ data }) {
         <Collapse
           key={generateUniqueKey()}
           title="Équipements"
-          description={<ul>{equipmentList}</ul>}
+          description={equipmentList}
         />
       </div>
     </div>
