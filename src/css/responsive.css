@@ -54,10 +54,10 @@
         flex-direction: column;
         gap: 20px;
     }
- 
- 
+  
     .product-collapse > .collapse {
         width: 100%;
+        margin: 0;
     }
       
     .slider-image-container {
@@ -82,6 +82,7 @@
     .info-card_left {
         flex-basis: 100%;
         gap: 5px;
+        width: 100%;
     }
     .info-card_left h2 {
         font-size: 18px;
@@ -112,7 +113,8 @@
         font-size: 15px;
     }
     .star {
-        margin-left: 5px;
+        margin-left: 0;
+        margin-right: 5px;
       }
       .info-card_right img {
         width: 32px;
