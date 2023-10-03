@@ -67,6 +67,9 @@
     .slider-number {
         z-index: -1;
     }
+    .slider-image-container img {
+        border-radius: 10px;
+      }
 
     .fa-angle-left,
     .fa-angle-right {
@@ -116,11 +119,31 @@
         height: 32px;
     }
     .collapse {
-        margin: 0 auto;
+        margin: 20px 10px;
     }
     .collapse-button {
+        border-radius: 5px;
         font-size: 12px;
         height: 30px;
       }
-        
+      .open .collapse-content {
+        font-size: 14px;
+      }
+      .fa-angle-up {
+        font-size: 25px;
+      }
+    .error h2 {
+        font-size: 96px;
+    }
+    
+    .error p {
+        font-size: 18px;
+        text-align: center;
+        width: 60%;
+    }
+    
+    .error a {
+        font-size: 14px;
+        margin: 50px;
+    }
 }
