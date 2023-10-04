@@ -2,6 +2,7 @@ import Rating from "./Rating";
 import Tag from "../components/Tag";
 import generateUniqueKey from "../utils";
 
+//Composant des informations de la carte
 function InfoCard({ card }) {
   return (
     <div className="info-card">
@@ -9,6 +10,7 @@ function InfoCard({ card }) {
         <h2>{card.title}</h2>
         <p>{card.location}</p>
         <div className="tags">
+          {/* Affichage des composants tags */}
           {card.tags.map((tag) => (
             <Tag key={generateUniqueKey()} name={tag} />
           ))}

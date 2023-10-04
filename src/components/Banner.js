@@ -1,3 +1,4 @@
+//Composant bannière
 function Banner({ imagesrc, text }) {
   return (
     <div className="banner">

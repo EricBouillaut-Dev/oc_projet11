@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
+//Composant slider (carrousel)
 function Slider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //Utilisation d'un modulo pour faire la rotation des images (max+1=min/min-1=max)
   const changeImage = (increment) => {
     setCurrentIndex(
-      (current) => (current + increment + images.length) % images.length
+      (index) => (index + increment + images.length) % images.length
     );
   };
 

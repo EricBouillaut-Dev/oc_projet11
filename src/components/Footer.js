@@ -1,5 +1,6 @@
 import LogoFooter from "../assets/logo_Footer.svg";
 
+//Composant footer
 function Footer() {
   return (
     <div className="footer">

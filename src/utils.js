@@ -1,3 +1,4 @@
+// Fonction de génération de clé unique
 function generateUniqueKey() {
   const randomPrefix = Math.floor(Math.random() * 0x100000).toString(16);
   const timestamp = Date.now().toString(16);

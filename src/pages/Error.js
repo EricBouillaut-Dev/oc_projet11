@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+//Composant de la page d'erreur
 function Error() {
   return (
     <div className="error">
